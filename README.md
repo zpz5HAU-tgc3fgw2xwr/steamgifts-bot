@@ -1,28 +1,8 @@
-# 🎁 Steamgifts Bot
+# 🤖 Steamgifts Bot&#x20;
 
-<p align="center">
-  <img src="https://via.placeholder.com/150" alt="Project Logo" width="150" height="150">
-</p>
+A modern TypeScript implementation of the Steamgifts Bot, inspired by the original Python project.
 
-<p align="center">
-  <b>A modern TypeScript implementation of the Steamgifts Bot, inspired by the original Python project.</b>
-</p>
-
-<p align="center">
-  <a href="https://github.com/zpz5HAU-tgc3fgw2xwr/steamgifts-bot/actions">
-    <img src="https://img.shields.io/github/actions/workflow/status/zpz5HAU-tgc3fgw2xwr/steamgifts-bot/ci.yml?branch=main" alt="Build Status">
-  </a>
-  <a href="https://github.com/zpz5HAU-tgc3fgw2xwr/steamgifts-bot/issues">
-    <img src="https://img.shields.io/github/issues/zpz5HAU-tgc3fgw2xwr/steamgifts-bot" alt="Issues">
-  </a>
-  <a href="https://github.com/zpz5HAU-tgc3fgw2xwr/steamgifts-bot/blob/main/LICENSE">
-    <img src="https://img.shields.io/github/license/zpz5HAU-tgc3fgw2xwr/steamgifts-bot" alt="License">
-  </a>
-</p>
-
----
-
-## 🚀 Features
+## ✨ Features
 
 - **Multi-Account Support**: Manage multiple accounts via a JSON configuration file.
 - **Rate Limiting and Throttling**: Intelligent request handling to avoid bans.
@@ -31,104 +11,82 @@
 - **Dockerized Deployment**: Run the bot seamlessly in the background using Docker.
 - **Extensible Design**: Built with TypeScript for modularity and future enhancements.
 
----
+## 🚀 Project Knowledge Goals
 
-## 📋 Planned Enhancements
+- **Learn Efficient Browser Automation**: Implement headless browser control with Puppeteer.
+- **Enhance Modular Design Skills**: Develop extensible and maintainable code with TypeScript.
+- **Understand Throttling Techniques**: Apply intelligent rate limiting to simulate realistic usage patterns.
+- **Master Deployment Strategies**: Containerize the project with Docker for efficient deployment.
+
+## 📦 Installation
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org) (v16 or higher recommended)
+- [Docker](https://www.docker.com) (optional, for containerized deployment)
+
+### Steps
+
+1. **Clone the Repository**:
+
+   ```bash
+   git clone https://github.com/zpz5HAU-tgc3fgw2xwr/steamgifts-bot.git
+   ```
+
+2. **Navigate to the Project Directory**:
+
+   ```bash
+   cd steamgifts-bot
+   ```
+
+3. **Install Dependencies**:
+
+   ```bash
+   npm install
+   ```
+
+4. **Configure Accounts**:
+
+   - Update the `accounts.json` file with your Steamgifts account details.
+
+5. **Run the Bot**:
+
+   - For local execution:
+
+     ```bash
+     npm start
+     ```
+
+   - For Dockerized deployment:
+
+     ```bash
+     docker build -t steamgifts-bot .
+     docker run -d steamgifts-bot
+     ```
+
+## 🌟 Planned Enhancements
 
 - **OpenVPN Integration**: (Stretch Goal) Route account-specific traffic through OpenVPN for added anonymity.
 - **Rate Limit Testing**: Fine-tune request intervals to prevent account flags.
 - **Advanced Configurations**: Support for custom filters, proxies, and intervals.
 - **Web UI**: (Potential Future Addition) A simple interface to monitor and control the bot.
 
----
+## 🖥️ Technologies Used
 
-## 📦 Installation
-
-### Prerequisites
-
-- [Node.js](https://nodejs.org/) (v16 or higher recommended)
-- [Docker](https://www.docker.com/) (optional but recommended)
-
-### Steps
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/zpz5HAU-tgc3fgw2xwr/steamgifts-bot.git
-   cd steamgifts-bot
-   ```
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-3. Build the project:
-   ```bash
-   npm run build
-   ```
-4. (Optional) Build the Docker image:
-   ```bash
-   docker build -t steamgifts-bot .
-   ```
-
----
-
-## ⚙️ Configuration
-
-Create a `config.json` file in the root directory (or mount it into the Docker container). Example:
-
-```json
-{
-  "accounts": [
-    {
-      "username": "account1",
-      "password": "password1",
-      "openvpn": "account1.ovpn"
-    },
-    {
-      "username": "account2",
-      "password": "password2",
-      "openvpn": "account2.ovpn"
-    }
-  ],
-  "settings": {
-    "rateLimit": 5000,
-    "maxRetries": 3
-  }
-}
-```
-
----
-
-## 🖥️ Usage
-
-### Locally
-
-```bash
-npm start
-```
-
-### With Docker
-
-```bash
-docker run -d \  
-  -v $(pwd)/config.json:/app/config.json \  
-  steamgifts-bot
-```
-
----
+- **TypeScript**: Core programming language.
+- **Puppeteer**: Headless browser automation.
+- **Docker**: Containerization for deployment.
+- **Node.js**: Runtime environment.
 
 ## 🤝 Contributing
 
-Contributions are welcome! Please submit issues or pull requests on [GitHub](https://github.com/zpz5HAU-tgc3fgw2xwr/steamgifts-bot).
+Contributions are welcome! Please open an issue or submit a pull request for any improvements or suggestions.
+
+## 📄 License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ---
 
-## 📜 License
+**Note**: Ensure that the `accounts.json` file is kept secure and not shared publicly, as it contains sensitive account information.
 
-This project is licensed under the [MIT License](LICENSE).
-
----
-
-## 📣 Credits
-
-- Inspired by [s-tyda/steamgifts-bot](https://github.com/s-tyda/steamgifts-bot)
-- Built with TypeScript, Puppeteer, and Node.js
