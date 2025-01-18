@@ -1,4 +1,4 @@
-# Steamgifts Bot 🤖
+# 🤖 Steamgifts Bot
 
 A feature-rich bot built with TypeScript to automate interactions on the Steamgifts platform. Designed for efficiency, modularity, and ease of use, this project brings a modern approach to managing giveaways and accounts with advanced automation capabilities.
 
