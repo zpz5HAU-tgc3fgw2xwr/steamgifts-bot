@@ -1,6 +1,6 @@
-# 🤖 Steamgifts Bot&#x20;
+# Steamgifts Bot 🤖
 
-A modern TypeScript implementation of the Steamgifts Bot, inspired by the original Python project.
+A feature-rich bot built with TypeScript to automate interactions on the Steamgifts platform. Designed for efficiency, modularity, and ease of use, this project brings a modern approach to managing giveaways and accounts with advanced automation capabilities.
 
 ## ✨ Features
 
@@ -82,6 +82,10 @@ A modern TypeScript implementation of the Steamgifts Bot, inspired by the origin
 
 Contributions are welcome! Please open an issue or submit a pull request for any improvements or suggestions.
 
+## 💬 Acknowledgments
+
+This project is inspired by the [Python implementation of a Steamgifts bot](https://github.com/s-tyda/steamgifts-bot). Special thanks to the original creator for the concept and initial groundwork.
+
 ## 📄 License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
@@ -89,4 +93,3 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ---
 
 **Note**: Ensure that the `accounts.json` file is kept secure and not shared publicly, as it contains sensitive account information.
-
